@@ -1,0 +1,54 @@
+{% extends 'accounts/base.html' %}
+{%load static%}
+        {%block content%}
+            <div class="page-content-inner">
+                <h2>Account</h2>
+                <nav class="responsive-tab mb-4">
+                    <li class="uk-active"><a href="#">Account</a></li>
+                    <li><a href="{%url 'updatebio' %}">Setting</a></li>
+                </nav>
+
+                <div uk-grid>
+                    <div class="uk-width-2-5@m">
+
+                        <div class="uk-card-default rounded text-center p-4">
+
+                            <div class="user-profile-photo  m-auto">
+                                <img src= "{{sub.image.url}}"  alt="">
+                            </div>
+
+                            <h4 class="mb-2 mt-3"> {{sub.User.username}} </h4>
+                        </div>
+                    </div>
+                    <div class="uk-width-expand@m">
+
+                        <div class="uk-card-default rounded">
+                            <div class="uk-flex uk-flex-between uk-flex-middle py-3 px-4">
+                                <h5 class="mb-0"> Account details </h5>
+                                    <a href="{%url 'updatebio' %}" uk-tooltip="title:Edit Account; pos: left"> <i
+                                            class="icon-feather-settings"></i> </a>
+                            </div>
+                            <hr class="m-0">
+                            <div class="uk-child-width-1-2@s uk-grid-small p-4" uk-grid>
+                                <div>
+                                    <h5 class="uk-text-bold"> First Name </h5>
+                                        <p>{{sub.firstname}} </p>
+                                </div>
+                                <div>
+                                    <h5 class="uk-text-bold"> Second Name </h5>
+                                        <p>{{sub.secondname}} </p>
+                                </div>
+                                <div>
+                                    <h5 class="uk-text-bold"> Your Matric No</h5>
+                                        <p> {{sub.matno}}</p>
+                                </div>
+                                <div>
+                                    <h5 class="uk-text-bold"> Your email address </h5>
+                                        <p> {{sub.user.username}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {%endblock%}

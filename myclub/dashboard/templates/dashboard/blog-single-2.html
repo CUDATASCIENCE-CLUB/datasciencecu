@@ -1,0 +1,29 @@
+{% extends 'accounts/base.html' %}
+{%load static%}
+{%block content%}
+
+        <div class="page-content">
+            <div class="container">
+                <div uk-grid>
+                    <div class="uk-width-3-4@m">
+                        <div class="blog-post single-post">
+                            <div class="blog-post-thumbnail">
+                                <div class="blog-post-thumbnail-inner">
+                                    <img src="{{e.image.url}}" alt="">
+                                </div>
+                            </div>
+                            <div class="blog-post-content">
+                                <h3> {{e.name}} </h3>
+                                <div class="mb-2">
+                                    <a href="{{e.links}}" class="blog-post-info">Click here to join</a>
+                                    <p> <i>{{e.date}}<br>{{e.time}}</i> </p>
+                                </div>
+
+                                <p>{{e.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endblock %}

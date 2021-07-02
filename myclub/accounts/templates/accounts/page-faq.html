@@ -1,0 +1,71 @@
+{% extends 'accounts/base.html' %}
+{%load static%}
+        {%block content%}
+        <!-- content -->
+            <div class="page-content">
+                <div class="container">
+
+                    <div data-src="{%static 'accounts/assets/images/help_background.svg'%}" uk-img
+                        class="uk-height-large uk-background-norepeat  uk-background-center-center uk-background-image@s uk-section uk-padding-remove-top uk-flex uk-flex-middle">
+                        <div class="uk-width-1-1 uk-container">
+                            <div class="uk-container-xsmall uk-margin-auto uk-text-center">
+                                <h3>Welcome to the CoursePlus Help Community</h3>
+                                <div class="uk-margin">
+
+                                    <div class="uk-inline uk-width-1-1">
+                                        <span class="uk-form-icon"><i class="uil-search"></i></span>
+                                        <input class="uk-input  uk-form-large" type="text"
+                                            placeholder="Search Something ... ">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="uk-container-xsmall uk-margin-auto">
+                        <h4> Privacy </h4>
+                        <article class="uk-card-default p-4 rounded">
+                            <ul class="uk-list-divider uk-list-large uk-accordion" uk-accordion>
+                                <li>
+                                    <a class="uk-accordion-title" href="#">
+                                        Is my personal info vulnerable?</a>
+                                    <div class="uk-accordion-content">
+                                        <p>No it isn't.Our site makes use of tokens to prevent malicious attacks</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="uk-accordion-title" href="#">How liable am i to fraudsters?</a>
+                                    <div class="uk-accordion-content" hidden="" aria-hidden="true">
+                                        <p>You are perfectly safe. All instructors and product partners are thoroughly vetted before they can join this platform.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </article>
+                        <h4 class="mt-4">Code of Conduct</h4>
+                        <article class="uk-card-default p-4 rounded">
+                            <ul class="uk-list-divider uk-list-large uk-accordion" uk-accordion>
+                                <li>
+                                    <a class="uk-accordion-title" href="#">Your Content and Conduct</a>
+                                    <div class="uk-accordion-content">
+                                        <p>This section applies to users who provide Content to the Service. It defines the scope of the permissions that you grant by uploading your Content, and includes your agreement not to upload anything that infringes on anyone else’s rights. .</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="uk-accordion-title" href="#">Removals</a>
+                                    <div class="uk-accordion-content" hidden="" aria-hidden="true">
+                                        <p>We have included a link to the tools you will need to remove your content, as well as a clear description about why we might need to take down content, and how to appeal removals.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a class="uk-accordion-title" href="#">Analyzing Content</a>
+                                    <div class="uk-accordion-content" hidden="" aria-hidden="true">
+                                        <p>We may automatically analyze content on Skillsearch, to help detect abuse and keep the platform safe.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        {%endblock%}
+
